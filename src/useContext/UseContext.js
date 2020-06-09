@@ -13,8 +13,10 @@ export default function UseContext() {
       <h3>Count</h3>
       <p>You click {count}</p>
       <button onClick={() => setCount(count + 1)}>click me</button>
+      <hr />
 
       <CountContext.Provider value={{count, name}}>
+        子组件
         <Child />
       </CountContext.Provider>
     </>
