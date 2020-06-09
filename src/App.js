@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Count from './Count';
-import CountHook from './CountHook';
-import Example from './useEffect/Example';
+// import Count from './Count';
+// import CountHook from './CountHook';
+import UseContext from './useContext/UseContext';
 
 class App extends Component {
   constructor(props) {
@@ -11,10 +11,10 @@ class App extends Component {
   render() { 
     return ( 
       <>
-        <Count />
-        <CountHook />
-        <hr />
-        <Example />
+        {/* <Count /> */}
+        {/* <CountHook /> */}
+        {/* <Example /> */}
+        <UseContext />
       </>
      );
   }
