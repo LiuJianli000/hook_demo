@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Count from './Count';
 import CountHook from './CountHook';
+import Example from './useEffect/Example';
 
 class App extends Component {
   constructor(props) {
@@ -12,6 +13,8 @@ class App extends Component {
       <>
         <Count />
         <CountHook />
+        <hr />
+        <Example />
       </>
      );
   }
