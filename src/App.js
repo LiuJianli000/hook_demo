@@ -5,6 +5,7 @@ import Count from './Count';
 import CountHook from './CountHook';
 import UseContext from './useContext/UseContext';
 import Example from './useEffect/Example';
+import UseCxtRdc from './useContext-useReducer/UseCxtRdc';
 
 class App extends Component {
   constructor(props) {
@@ -26,12 +27,14 @@ class App extends Component {
           <li><Link to="/useEffect">useEffect</Link></li>
           <li><Link to="/useContext">useContext</Link></li>
           <li><Link to="/useReducer">useReducer</Link></li>
+          <li><Link to="/useContext-useReducer">useContext-useReducer</Link></li>
         </ul>
         <Route path="/" exact component={Count}></Route>
         <Route path="/useState" component={CountHook}></Route>
         <Route path="/useEffect" component={Example}></Route>
         <Route path="/useContext" component={UseContext}></Route>
         <Route path="/useReducer" component={UseReducer}></Route>
+        <Route path="/useContext-useReducer" component={UseCxtRdc}></Route>
       </Router>
       </>
      );
