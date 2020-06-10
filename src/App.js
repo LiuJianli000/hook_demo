@@ -8,6 +8,7 @@ import Example from './useEffect/Example';
 import UseCxtRdc from './useContext-useReducer/UseCxtRdc';
 import UseMemo from './useMemo/UseMemo';
 import UseRef from './useRef/UseRef';
+import MyHook from './myhook/MyHook';
 
 class App extends Component {
   constructor(props) {
@@ -28,6 +29,7 @@ class App extends Component {
           <li><Link to="/useContext-useReducer">useContext-useReducer</Link></li>
           <li><Link to='/useMemo'>useMemo</Link></li>
           <li><Link to='/useRef'>useRef</Link></li>
+          <li><Link to='/myHook'>myHook</Link></li>
         </ul>
         <Route path="/count-demo" component={Count}></Route>
         <Route path="/useState" component={CountHook}></Route>
@@ -37,6 +39,7 @@ class App extends Component {
         <Route path="/useContext-useReducer" component={UseCxtRdc}></Route>
         <Route path="/useMemo" component={UseMemo}></Route>
         <Route path="/useRef" component={UseRef}></Route>
+        <Route path="/myHook" component={MyHook}></Route>
       </Router>
       </>
      );
