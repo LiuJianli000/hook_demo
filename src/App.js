@@ -15,21 +15,17 @@ class App extends Component {
   render() { 
     return ( 
       <>
-        {/* <Count /> */}
-        {/* <CountHook /> */}
-        {/* <Example /> */}
-        {/* <UseContext /> */}
-        {/* <UseReducer /> */}
+        <h1>hooks 学习</h1>
         <Router>
         <ul>
-          <li><Link to="/">count</Link></li>
+          <li><Link to="/count-demo">count</Link></li>
           <li><Link to="/useState">useState</Link></li>
           <li><Link to="/useEffect">useEffect</Link></li>
           <li><Link to="/useContext">useContext</Link></li>
           <li><Link to="/useReducer">useReducer</Link></li>
           <li><Link to="/useContext-useReducer">useContext-useReducer</Link></li>
         </ul>
-        <Route path="/" exact component={Count}></Route>
+        <Route path="/count-demo" component={Count}></Route>
         <Route path="/useState" component={CountHook}></Route>
         <Route path="/useEffect" component={Example}></Route>
         <Route path="/useContext" component={UseContext}></Route>
